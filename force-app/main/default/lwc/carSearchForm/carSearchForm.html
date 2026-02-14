@@ -1,0 +1,19 @@
+<template>
+    <lightning-card title="Car Search">
+
+        <lightning-layout horizontal-align="center">
+            <lightning-layout-item  padding="horizonal-small">
+
+                <!-- Combobox accepts data in "label and Value format" -->
+                <lightning-combobox name="carTypes" label="Car Types" 
+                                   placeholder="All Types" 
+                                    options={carTypes} onchange={handleCarTypeChange}>
+                                
+                                </lightning-combobox>
+            </lightning-layout-item>
+            <lightning-layout-item padding="horizontal-small">
+                <lightning-button label="New" onclick={createNewCarType}></lightning-button>
+            </lightning-layout-item>
+        </lightning-layout>
+    </lightning-card>
+</template>
