@@ -42,7 +42,7 @@
     </actionOverrides>
     <allowInChatterGroups>false</allowInChatterGroups>
     <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
-    <deploymentStatus>Deployed</deploymentStatus>
+    <deploymentStatus>Deployed</deploymentStatus>    
     <description>Property object to store different car type</description>
     <enableActivities>true</enableActivities>
     <enableBulkApi>false</enableBulkApi>
