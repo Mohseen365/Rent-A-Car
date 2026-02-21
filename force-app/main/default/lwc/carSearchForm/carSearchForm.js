@@ -52,6 +52,16 @@ export default class CarSearchForm extends NavigationMixin(LightningElement) {
         })
     }
 
+    createNewCar() {
+        this[NavigationMixin.Navigate]({
+            type: 'standard__objectPage',
+            attributes: {
+                objectApiName: 'Car__c',
+                actionName: 'new'
+            }
+        });
+    }
+
     showToastEvent(title, message, variant) {
 
         const evt = new ShowToastEvent({

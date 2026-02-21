@@ -1,19 +1,33 @@
 <template>
-    <lightning-card title="Car Search">
+    <lightning-card variant="base">
+        <div class="slds-grid slds-grid_align-center slds-grid_vertical-align-center slds-wrap">
+            <div class="slds-col slds-size_1-of-3 ">
+                <lightning-button 
+                    label="New Car Type" 
+                    onclick={createNewCarType}
+                    >
 
-        <lightning-layout horizontal-align="center">
-            <lightning-layout-item  padding="horizonal-small">
+                </lightning-button>
+            </div>
 
-                <!-- Combobox accepts data in "label and Value format" -->
+            <div class="slds-col slds-size_1-of-3 ">
+                <lightning-button 
+                    label="New Car" 
+                    onclick={createNewCar}>
+
+                </lightning-button>
+            </div>
+
+            <div class="slds-col slds-size_1-of-2 slds-m-around_small">
                 <lightning-combobox name="carTypes" label="Car Types" 
-                                   placeholder="All Types" 
-                                    options={carTypes} onchange={handleCarTypeChange}>
+                                    placeholder="All Types" 
+                                    options={carTypes} 
+                                    onchange={handleCarTypeChange}>
                                 
-                                </lightning-combobox>
-            </lightning-layout-item>
-            <lightning-layout-item padding="horizontal-small">
-                <lightning-button label="New" onclick={createNewCarType}></lightning-button>
-            </lightning-layout-item>
-        </lightning-layout>
+                </lightning-combobox> 
+            </div>
+
+        </div>
     </lightning-card>
+    
 </template>
